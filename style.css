@@ -1,54 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: aliceblue;
-  min-height: 100vh;
-  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background: #ecf0fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5rem; */
 }
 
-header,
-main {
-  min-height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+li {
+    list-style: none;
 }
 
-.todo_title {
-  text-transform: uppercase;
-  font-size: 2rem;
+.form,
+.grettings {
+    display: none;
 }
 
-.todo_input,
-.todo_btn {
-  all: unset;
-  padding: 0.5rem 0.3rem;
-  font-size: 1.5rem;
-  border: none;
-  background: none;
-  color: aliceblue;
+.showing {
+    display: block;
 }
 
-.todo_input {
-  border-bottom: 1px solid aliceblue;
-}
-.todo_input:hover {
-  border-bottom: 3px solid #30cfd0;
+.btn {
+    cursor: pointer;
 }
 
-.todo_btn {
-  cursor: pointer;
-  transition: all 0.3s ease;
+
+.clock_container h1 {
+    font-size: 4rem;
+    /* color: #fff; */
+    margin-bottom: 3rem;    
 }
 
-.todo_btn:hover {
-  color: #30cfd0;
 
-}
+

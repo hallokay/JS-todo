@@ -4,30 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAY'S TODO APP</title>
-    <link rel="stylesheet" href="style.css">
+    <title>momentom app</title>
 
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 class="todo_title">kay's todo list</h1>
-    </header>
-    <main>
-        <form action="">
-            <input type="text" class="todo_input">
-            <button class="todo_btn" type="submit">
-                <i class="fas fa-plus-square"></i>
-            </button>
-        </form>
-        <div class="todo_container">
-            <ul class="todo_list">
-                
-            </ul>
-        </div>
-    </main>
 
-    <script src="app.js"></script>
+<div class="wrap">
+    <div class="clock_container">
+        <h1> 00 : 00 : 00 </h1>
+    </div>
+    
+    <div class="username_container">
+    
+        <form action="" class="name_form form">
+            <input type="text" placeholder="이름이 뭐니?" />
+        </form>
+        
+        <h4 class="greetings"></h4>
+    </div>
+    
+    <div class="todo_container">
+        <form action="" class="todo_form">
+            <input type="text" placeholder="what todo?">
+        </form>
+        <ul class="todo_list">
+    
+        </ul>
+    </div>
+</div>
+
+  
+  <script src="/clock.js"></script>  
+   <script src="/greeting.js"></script>
+   <script src="/todo.js"></script>
+   <script src="/bg.js"></script>
+
+
+
 </body>
 </html>
